@@ -21,7 +21,6 @@
     - plusieurs critères (goût, difficulté, coût, temps)
     - laisser des commentaires
 - Définir des favoris
-- 
 
 ### Scénario 3a
 - Modifier les menus
@@ -46,3 +45,12 @@
     - possibilité de corriger
 
     
+## Contraites 
+
+- Création d'une interface REST en open API avec description
+- Déploiement en SSL (nom de domaine public) let’s enscript
+- Solution déployée sur une infrastructure cloud sécurisée (https avec certificat valide)
+- Techniques et technologiques : architecture SPA, JHipster, mobile first, web responsive
+- gestion de projet : versioning github, utilisation des issues, agile, livrables (avec dates)
+- Architecture Monolithique 
+- Backend Spring
