@@ -39,7 +39,7 @@ Une fois inscrit, je veux accéder au site et aux formulaires en ligne pour cons
 
 ### Critères d'acceptation :
 
-    Je peux me connecter et accéder au formulaire d'inscription et de modification du compte en ligne.
+    Je peux me connecter et accéder au formulaire d'inscription du compte en ligne et le modifier. Le système doit mettre à jour les modifications.
 
 ## User Story 4:
 ### En tant qu’utilisateur
@@ -48,4 +48,4 @@ Une fois inscrit, je veux consulter tous les menus existants sur la plateforme, 
 
 ### Critères d'acceptation :
 
-    Je peux accéder à la liste complète des menus disponibles sur le site après identification.
+    Je peux accéder à la liste complète des menus disponibles sur le site après identification. Le système renvois la liste des menus.
