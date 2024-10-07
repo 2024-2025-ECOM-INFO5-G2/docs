@@ -14,9 +14,9 @@ Tout membre du groupe est prié de respecter les règles communes suivantes selo
 
 - La **collaboration** est une valeur fondamentale. Tous les membres doivent faire preuve d’entraide et travailler ensemble pour atteindre les objectifs du projet.
 
-- Le **respect des délais** est essentiel pour garantir l'avancement du projet. Chaque membre doit s'efforcer de terminer les tâches assignées dans les délais impartis.
-
 - La **qualité du code** doit toujours primer sur la rapidité d’exécution.
+
+- Le **respect des délais** est essentiel pour garantir l'avancement du projet. Chaque membre doit s'efforcer de terminer les tâches assignées dans les délais impartis.
 
 - La **formation continue** est encouragée. Chaque développeur doit veiller à se former sur les technologies utilisées et chercher à améliorer ses compétences.
 
