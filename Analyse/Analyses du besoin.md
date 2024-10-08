@@ -14,6 +14,7 @@
     - supprimer
 - Accéder au site / formulaire en ligne
 - Accéder à tous les menus existant
+- Modifier à postérori les préférences de l'utilisatateur 
 
 
 ### Scénario 2
