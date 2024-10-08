@@ -1,143 +1,150 @@
 # Déclaration des variables
 variable "ssh_key" {
-  description = "SSH public key for the instances"  # Clé publique SSH utilisée pour accéder aux instances
+  description = "path to SSH public key for the instances"
   type        = string
 }
 
 variable "subscription_id" {
-  description = "Azure Subscription ID"  # ID de souscription Azure pour l'authentification
+  description = "Azure Subscription ID"
   type        = string
 }
 
 # Configuration du provider Azure Resource Manager
 provider "azurerm" {
   features {}
-  subscription_id = var.subscription_id  # ID de souscription fourni par la variable
+  subscription_id = var.subscription_id
 }
 
 # Ressource : Groupe de ressources
 resource "azurerm_resource_group" "rg" {
-  name     = "MMM01_Group"  # Nom du groupe de ressources
-  location = "West Europe"   # Localisation du groupe de ressources
+  name     = "MMM01_Group"
+  location = "West Europe"
 }
 
 # Ressource : Réseau virtuel
 resource "azurerm_virtual_network" "vnet" {
-  name                = "MMM01_VNet"  # Nom du réseau virtuel
-  location            = azurerm_resource_group.rg.location  # Localisation du réseau virtuel
-  resource_group_name = azurerm_resource_group.rg.name  # Nom du groupe de ressources associé
-  address_space       = ["10.0.0.0/16"]  # Plage d'adresses IP pour le réseau virtuel
+  name                = "MMM01_VNet"
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+  address_space       = ["10.0.0.0/16"]
 }
 
 # Ressource : Sous-réseau
 resource "azurerm_subnet" "subnet" {
-  name                 = "MMM01_Subnet"  # Nom du sous-réseau
-  resource_group_name  = azurerm_resource_group.rg.name  # Nom du groupe de ressources associé
-  virtual_network_name = azurerm_virtual_network.vnet.name  # Nom du réseau virtuel associé
-  address_prefixes     = ["10.0.1.0/24"]  # Plage d'adresses IP pour le sous-réseau
-}
-
-# Ressource : Interface réseau
-resource "azurerm_network_interface" "nic" {
-  name                = "MMM01_NIC"  # Nom de l'interface réseau
-  location            = azurerm_resource_group.rg.location  # Localisation de l'interface réseau
-  resource_group_name = azurerm_resource_group.rg.name  # Nom du groupe de ressources associé
-
-  ip_configuration {
-    name                          = "internal"  # Nom de la configuration IP
-    subnet_id                    = azurerm_subnet.subnet.id  # ID du sous-réseau associé
-    private_ip_address_allocation = "Dynamic"  # Allocation dynamique de l'adresse IP privée
-    public_ip_address_id         = azurerm_public_ip.pub_ip.id  # ID de l'adresse IP publique associée
-  }
-}
-
-# Ressource : Adresse IP publique
-resource "azurerm_public_ip" "pub_ip" {
-  name                = "MMM01_PublicIP"  # Nom de l'adresse IP publique
-  location            = azurerm_resource_group.rg.location  # Localisation de l'adresse IP publique
-  resource_group_name = azurerm_resource_group.rg.name  # Nom du groupe de ressources associé
-  allocation_method   = "Static"  # Méthode d'allocation d'adresse IP (statique)
-  sku                 = "Standard"  # SKU de l'adresse IP
+  name                 = "MMM01_Subnet"
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = ["10.0.1.0/24"]
 }
 
 # Ressource : Groupe de sécurité réseau
 resource "azurerm_network_security_group" "nsg" {
-  name                = "MMM01_NSG"  # Nom du groupe de sécurité réseau
-  location            = azurerm_resource_group.rg.location  # Localisation du groupe de sécurité
-  resource_group_name = azurerm_resource_group.rg.name  # Nom du groupe de ressources associé
+  name                = "MMM01_NSG"
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
 
   # Règle de sécurité pour autoriser le trafic SSH
   security_rule {
     name                       = "allow_ssh"
-    priority                   = 1000  # Priorité de la règle
-    direction                  = "Inbound"  # Direction du trafic (entrant)
-    access                     = "Allow"  # Autoriser le trafic
-    protocol                   = "Tcp"  # Protocole utilisé
-    source_port_range          = "*"  # Plage de ports source
-    destination_port_range     = 22  # Port de destination pour SSH
-    source_address_prefix      = "*"  # Plage d'adresses source
-    destination_address_prefix = "*"  # Plage d'adresses destination
+    priority                   = 1000
+    direction                  = "Inbound"
+    access                     = "Allow"
+    protocol                   = "Tcp"
+    source_port_range          = "*"
+    destination_port_range     = 22
+    source_address_prefix      = "*"
+    destination_address_prefix = "*"
   }
 
   # Règle de sécurité pour autoriser le trafic HTTP
   security_rule {
     name                       = "allow_http"
-    priority                   = 1001  # Priorité de la règle
-    direction                  = "Inbound"  # Direction du trafic (entrant)
-    access                     = "Allow"  # Autoriser le trafic
-    protocol                   = "Tcp"  # Protocole utilisé
-    source_port_range          = "*"  # Plage de ports source
-    destination_port_range     = 80  # Port de destination pour HTTP
-    source_address_prefix      = "*"  # Plage d'adresses source
-    destination_address_prefix = "*"  # Plage d'adresses destination
+    priority                   = 1001
+    direction                  = "Inbound"
+    access                     = "Allow"
+    protocol                   = "Tcp"
+    source_port_range          = "*"
+    destination_port_range     = 80
+    source_address_prefix      = "*"
+    destination_address_prefix = "*"
   }
 
   # Règle de sécurité pour autoriser le trafic HTTPS
   security_rule {
     name                       = "allow_https"
-    priority                   = 1002  # Priorité de la règle
-    direction                  = "Inbound"  # Direction du trafic (entrant)
-    access                     = "Allow"  # Autoriser le trafic
-    protocol                   = "Tcp"  # Protocole utilisé
-    source_port_range          = "*"  # Plage de ports source
-    destination_port_range     = 443  # Port de destination pour HTTPS
-    source_address_prefix      = "*"  # Plage d'adresses source
-    destination_address_prefix = "*"  # Plage d'adresses destination
+    priority                   = 1002
+    direction                  = "Inbound"
+    access                     = "Allow"
+    protocol                   = "Tcp"
+    source_port_range          = "*"
+    destination_port_range     = 443
+    source_address_prefix      = "*"
+    destination_address_prefix = "*"
   }
+}
+
+# Ressource : Adresse IP publique
+resource "azurerm_public_ip" "pub_ip" {
+  name                = "MMM01_PublicIP"
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+  allocation_method   = "Static"
+  sku                 = "Standard"
+}
+
+# Ressource : Interface réseau
+resource "azurerm_network_interface" "nic" {
+  name                = "MMM01_NIC"
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name                          = "internal"
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = "Dynamic"
+    public_ip_address_id          = azurerm_public_ip.pub_ip.id
+  }
+
+}
+
+# Association entre l'interface réseau et le groupe de sécurité réseau
+resource "azurerm_network_interface_security_group_association" "nic_nsg_assoc" {
+  network_interface_id      = azurerm_network_interface.nic.id
+  network_security_group_id = azurerm_network_security_group.nsg.id
 }
 
 # Ressource : Machine virtuelle Linux
 resource "azurerm_linux_virtual_machine" "vm" {
-  name                = "MMM01VM"  # Nom de la machine virtuelle
-  resource_group_name = azurerm_resource_group.rg.name  # Nom du groupe de ressources associé
-  location            = azurerm_resource_group.rg.location  # Localisation de la machine virtuelle
-  size                = "Standard_B1s"  # Taille de la machine virtuelle
-  admin_username      = "azureuser"  # Nom d'utilisateur administrateur
+  name                = "MMM01VM"
+  resource_group_name = azurerm_resource_group.rg.name
+  location            = azurerm_resource_group.rg.location
+  size                = "Standard_B1s"
+  admin_username      = "azureuser"
 
   network_interface_ids = [
-    azurerm_network_interface.nic.id,  # ID de l'interface réseau associée
+    azurerm_network_interface.nic.id,
   ]
 
   admin_ssh_key {
-    username   = "azureuser"  # Nom d'utilisateur pour la clé SSH
-    public_key = var.ssh_key  # Chemin vers la clé publique SSH
+    username   = "azureuser"
+    public_key = file(var.ssh_key)
   }
 
   os_disk {
-    name                 = "MMM01_OSDisk"  # Nom du disque OS
-    caching              = "ReadWrite"  # Politique de cache pour le disque
-    storage_account_type = "Standard_LRS"  # Type de compte de stockage
+    name                 = "MMM01_OSDisk"
+    caching              = "ReadWrite"
+    storage_account_type = "Standard_LRS"
   }
 
   source_image_reference {
-    publisher = "Canonical"  # Éditeur de l'image
-    offer     = "0001-com-ubuntu-server-jammy"  # Offre de l'image
-    sku       = "22_04-lts-gen2"  # SKU de l'image
-    version   = "latest"  # Version de l'image
+    publisher = "Canonical"
+    offer     = "0001-com-ubuntu-server-jammy"
+    sku       = "22_04-lts-gen2"
+    version   = "latest"
   }
 }
 
 # Sortie : Adresse IP publique
 output "public_ip" {
-  value = azurerm_public_ip.pub_ip.ip_address  # Valeur de l'adresse IP publique à afficher après l'exécution
+  value = azurerm_public_ip.pub_ip.ip_address
 }
