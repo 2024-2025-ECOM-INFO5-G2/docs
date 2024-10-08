@@ -120,7 +120,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
   admin_ssh_key {
     username   = "azureuser"  # Nom d'utilisateur pour la clé SSH
-    public_key = file("path/to/your/public/ssh/key")  # Chemin vers la clé publique SSH
+    public_key = var.ssh_key  # Chemin vers la clé publique SSH
   }
 
   os_disk {
