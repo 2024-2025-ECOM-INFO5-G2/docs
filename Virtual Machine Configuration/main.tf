@@ -142,6 +142,9 @@ resource "azurerm_linux_virtual_machine" "vm" {
     sku       = "22_04-lts-gen2"
     version   = "latest"
   }
+  
+  # Custom script to install Docker
+  custom_data = filebase64("${path.module}/setup-vm.sh")
 }
 
 # Sortie : Adresse IP publique
