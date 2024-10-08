@@ -16,7 +16,7 @@ Before you begin, ensure you have the following installed:
    - For macOS/Windows:
       - Visit the [Terraform downloads page](https://www.terraform.io/downloads.html).
       - Download the appropriate package for your operating system (Windows, macOS, or Linux).
-   -for Linux:
+   - For Linux:
       - ```bash
         wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
         ```
