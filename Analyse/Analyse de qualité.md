@@ -1,13 +1,9 @@
 # Analyse de Qualité
 Démarche qualité : qu’est-ce que vous mettez en place pour garantir la qualité ?
 
-## Général
-
-**TO DO**
-
 ## Analyse du code
 ### Revue de code
-Nous allons mettre en place une procédure de revue de code systématique. Avant chaque **push/commit?**, la 2ème personne du binome (CICD, BackEnd ou FrontEnd) fera une revue de code. Et régulièrement, la revue de code sera faite en présence d'un membre d'un autre binôme pour aider à la cohérence des 3 parties. En cas de désaccord ou de problème, une 3ème personne sera systématiquement consulté.
+Nous allons mettre en place une procédure de revue de code systématique. Avant chaque pull request, la 2ème personne du binome (CICD, BackEnd ou FrontEnd) fera une revue de code. Et régulièrement, la revue de code sera faite en présence d'un membre d'un autre binôme pour aider à la cohérence des 3 parties. En cas de désaccord ou de problème, une 3ème personne sera systématiquement consulté.
 
 En plus de la revue de code humaine, nous utiliserons l'outil **Sonar** pour l'analyse continue de la qualité du code.
 
