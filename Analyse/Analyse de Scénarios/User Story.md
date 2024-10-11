@@ -35,13 +35,22 @@ Une fois inscrit, Je veux ajouter des membres de mon foyer pour gérer leurs pr�
 ## User Story 3:
 ### En tant qu’utilisateur
 
+Une fois inscrit et connecter, je peux modifier mes préférences alimentaires.
+
+### Critères d'acceptation :
+
+    Je peux accéder à mes préfèrences et modifier les champs pour mettre à jour celle-ci. Mes futures menus prendrons ces nouvelles préfèrences
+
+## User Story 4:
+### En tant qu’utilisateur
+
 Une fois inscrit, je veux accéder au site et aux formulaires en ligne pour consulter et modifier les informations relatives à mon compte ou à mon foyer.
 
 ### Critères d'acceptation :
 
     Je peux me connecter et accéder au formulaire d'inscription du compte en ligne et le modifier. Le système doit mettre à jour les modifications.
 
-## User Story 4:
+## User Story 5:
 ### En tant qu’utilisateur
 
 Une fois inscrit, je veux consulter tous les menus existants sur la plateforme, afin de choisir les plus adaptés à mes besoins et à ceux de ma famille.
