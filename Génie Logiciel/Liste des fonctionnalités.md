@@ -2,13 +2,29 @@
 
 ## Liste des fonctionnalités - contraintes
 
+# Analyses du besoin 
+
+## Fonctionnalités 
+
 ### Scénario 1
+#### Utilisateur
 - S'inscrire sur le site
     - mode de vie, préférences alimentaires, allergies connues.
+    - validation d’un compte via l’envoi de mail
+    - récupération des mots de passe perdu
+    - identification via JWT
+    - gestion des droits
+    - modification par l’utilisateur ?
 - Ajouter des membres de son foyer
     - supprimer
 - Accéder au site / formulaire en ligne
 - Accéder à tous les menus existant
+- Modifier à postérori les préférences de l'utilisatateur
+- 
+#### Administrateur
+- Créer/Editer/Supprimer un compte
+    - Gérer les roles/droits des comptes
+- Visualisation de statistiques du site
 
 
 ### Scénario 2
@@ -44,7 +60,7 @@
     - Traducteur automatique
     - possibilité de corriger
 
-    
+
 ## Contraites 
 
 - Création d'une interface REST en open API avec description
@@ -52,5 +68,6 @@
 - Solution déployée sur une infrastructure cloud sécurisée (https avec certificat valide)
 - Techniques et technologiques : architecture SPA, JHipster, mobile first, web responsive
 - gestion de projet : versioning github, utilisation des issues, agile, livrables (avec dates)
-- Architecture Monolithique 
+- Architecture Monolithique
+
 - Backend Spring

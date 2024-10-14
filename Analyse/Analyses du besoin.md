@@ -3,6 +3,7 @@
 ## Fonctionnalités 
 
 ### Scénario 1
+#### Utilisateur
 - S'inscrire sur le site
     - mode de vie, préférences alimentaires, allergies connues.
     - validation d’un compte via l’envoi de mail
@@ -14,7 +15,12 @@
     - supprimer
 - Accéder au site / formulaire en ligne
 - Accéder à tous les menus existant
-- Modifier à postérori les préférences de l'utilisatateur 
+- Modifier à postérori les préférences de l'utilisatateur
+- 
+#### Administrateur
+- Créer/Editer/Supprimer un compte
+    - Gérer les roles/droits des comptes
+- Visualisation de statistiques du site
 
 
 ### Scénario 2
