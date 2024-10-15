@@ -59,6 +59,42 @@ Une fois inscrit, je veux consulter tous les menus existants sur la plateforme, 
 
     Je peux accéder à la liste complète des menus disponibles sur le site après identification. Le système renvois la liste des menus.
 
+    ## User Story 6 (admin): 
+
+### En tant que administrateur,
+je veux pouvoir créer, éditer et supprimer des comptes utilisateurs, nutritionnistes ou administrateurs, afin de gérer efficacement les accès et l'administration des comptes sur le site.
+
+### Critères d'acceptation :
+
+    -L'administrateur peut créer un nouveau compte en remplissant les informations nécessaires (nom, email, mot de passe, rôle initial).
+    -Lors de la création du compte par l'administrateur, une notification est envoyée par mail. 
+    -L'administrateur peut modifier les informations d'un compte existant (nom, email, rôle).
+    -L'administrateur peut désactiver ou supprimer définitivement un compte.
+    -Un message de confirmation s'affiche après la création, la modification ou la suppression d'un compte.
+    -Les utilisateurs concernés reçoivent une notification en cas de modification ou suppression de leur compte.
+
+## User Story 7(admin): 
+
+### En tant que administrateur,
+je veux pouvoir gérer les rôles et les droits associés aux comptes, afin de contrôler l'accès aux différentes fonctionnalités du site.
+
+### Critères d'acceptation :
+
+    -L'administrateur peut attribuer ou modifier les rôles d'un utilisateur (utilisateur, administrateur, nutritionniste).
+    -L'administrateur peut configurer les droits associés à chaque rôle (accès en lecture, écriture, gestion, etc.).
+    -Les modifications de rôles ou de droits prennent effet immédiatement.
+    -Les utilisateurs concernés reçoivent une notification les informant des changements de leurs droits d'accès.
+    -Une interface permet de visualiser facilement les rôles et droits de chaque utilisateur.
+
+## User Story 8(admin): 
+
+### En tant que administrateur,
+je veux pouvoir visualiser les statistiques du site, afin de suivre les performances, l'utilisation et identifier les éventuelles améliorations à apporter.
+
+### Critères d'acceptation :
+
+    -L'administrateur peut visualiser des graphiques pour des données spécifiques (croissance du nombre d'utilisateurs, activité par rôle, mail de menus envoyés dans la semaines, etc.).
+
 
 # User stories Scénario 2:
 
