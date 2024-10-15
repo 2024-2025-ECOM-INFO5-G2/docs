@@ -51,6 +51,7 @@ Une fois inscrit, je veux accéder au site et aux formulaires en ligne pour cons
     Je peux me connecter et accéder au formulaire d'inscription du compte en ligne et le modifier. Le système doit mettre à jour les modifications.
 
 ## User Story 5:
+
 ### En tant qu’utilisateur
 
 Une fois inscrit, je veux consulter tous les menus existants sur la plateforme, afin de choisir les plus adaptés à mes besoins et à ceux de ma famille.
