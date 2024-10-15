@@ -34,3 +34,19 @@ En résumé, la pipeline permet d'automatiser et d'accélérer les processus de 
 ## FrontEnd
 
 Nous avons jugé que la méthode TDD était moins adapté pour le Front et ne sera donc pas utilisé ici. Nous allons utiliser des tests end-to-end au fur et à mesure.
+
+Nous allons plutôt utiliser **Jest** comme framework de test pour plusieurs raisons :
+
+- **Conçu pour React** : Jest est spécifiquement développé pour les applications React, ce qui en fait un choix idéal pour notre projet. Son intégration avec React permet de tester facilement les composants et d'assurer leur bon fonctionnement.
+
+- **Facilité d'utilisation** : Jest est simple à configurer et à utiliser, ce qui permet une adoption rapide par l'équipe de développement.
+
+- **Exécution rapide des tests** : Grâce à sa capacité à exécuter des tests en parallèle, Jest permet d'obtenir des résultats rapidement.
+
+- **Fonctionnalités avancées** : Jest offre des fonctionnalités puissantes telles que le mocking, les snapshots, et des assertions intégrées, permettant de tester efficacement les composants et les fonctionnalités sans avoir à recourir à des bibliothèques tierces.
+
+- **Communauté et support** : Étant un projet maintenu par Facebook et largement adopté dans la communauté React, Jest bénéficie d'une documentation riche et d'un large éventail de ressources en ligne, facilitant la résolution des problèmes et l'apprentissage.
+
+- **Couverture de code intégrée** : Jest propose des rapports de couverture de code par défaut, permettant de s'assurer que nos tests couvrent efficacement les différentes parties de l'application.
+
+En résumé, Jest se présente comme un choix judicieux pour notre projet en raison de sa conception spécifique pour React, de sa facilité d'utilisation, de ses performances, et de ses fonctionnalités avancées qui facilitent les tests unitaires et l'assurance qualité.
