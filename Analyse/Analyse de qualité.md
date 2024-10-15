@@ -50,3 +50,23 @@ Nous allons plutôt utiliser **Jest** comme framework de test pour plusieurs rai
 - **Couverture de code intégrée** : Jest propose des rapports de couverture de code par défaut, permettant de s'assurer que nos tests couvrent efficacement les différentes parties de l'application.
 
 En résumé, Jest se présente comme un choix judicieux pour notre projet en raison de sa conception spécifique pour React, de sa facilité d'utilisation, de ses performances, et de ses fonctionnalités avancées qui facilitent les tests unitaires et l'assurance qualité.
+
+
+
+### Tests End-to-End avec Cypress
+
+Pour garantir une qualité optimale de l'expérience utilisateur, nous allons intégrer **Cypress** comme outil principal pour réaliser des tests end-to-end. Cypress est un framework de test moderne qui offre plusieurs avantages pour notre projet :
+
+- **Tests en temps réel** : Cypress permet d'exécuter des tests dans le navigateur en temps réel, offrant ainsi une vue d'ensemble immédiate des interactions utilisateur et de l'état de l'application à chaque étape du test.
+
+- **Facilité de mise en place** : Avec une installation simple et une configuration intuitive, Cypress permet à notre équipe de démarrer rapidement sans complexité excessive. La syntaxe claire et lisible facilite également l'écriture et la maintenance des tests.
+
+- **Débogage simplifié** : Grâce à son interface utilisateur interactive, Cypress fournit des outils de débogage puissants, comme la possibilité de prendre des captures d'écran et d'enregistrer des vidéos des tests échoués, ce qui simplifie l'identification et la résolution des problèmes.
+
+- **Tests asynchrones** : Cypress gère automatiquement les promesses et les appels asynchrones, permettant d'écrire des tests qui se synchronisent facilement avec le comportement de l'application, sans nécessiter de logique de synchronisation complexe.
+
+- **Intégration avec CI/CD** : Nous allons configurer Cypress pour s'intégrer dans notre pipeline CI/CD avec GitHub Actions, permettant ainsi d'exécuter les tests end-to-end à chaque pull request et de s'assurer que chaque déploiement maintient la fonctionnalité et la performance de l'application.
+
+- **Communauté active et ressources** : Cypress bénéficie d'une communauté dynamique qui propose de nombreuses ressources, plugins et documentation, facilitant ainsi l'adoption et l'enrichissement de notre suite de tests.
+
+En résumé, Cypress se révèle être un choix idéal pour tester nos fonctionnalités end-to-end. En intégrant cet outil dans notre démarche qualité, nous nous assurons que l'application répond aux attentes des utilisateurs finaux et que les régressions sont rapidement identifiées et corrigées.
