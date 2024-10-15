@@ -1,4 +1,4 @@
-# Attribution des rôles dans le projet
+# Attribution des rôles dans le projet - Groupe 2
 
 ## Introduction
 
