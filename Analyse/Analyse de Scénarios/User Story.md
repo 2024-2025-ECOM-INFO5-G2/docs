@@ -103,59 +103,55 @@ je veux pouvoir visualiser les statistiques du site, afin de suivre les performa
 Je veux recevoir chaque semaine une proposition de menus respectant mes préférences alimentaires, sans que les plats ne se répètent trop souvent, afin d’avoir une variété de repas adaptés à mes besoins.
 
 ### Critères d'acceptation :
-- **Proposition hebdomadaire** : Je reçois chaque semaine une proposition de menus via email ou notification, prenant en compte mes préférences alimentaires et celles de mon foyer.
-- **Diversité des menus** : Les plats proposés doivent changer chaque semaine et ne pas se répéter 2 semaine a suivre.
-- **Gestion des préférences** : Les modifications de mes préférences ou allergies dans mon profil doivent être prises en compte dans les propositions futures.
+  - Proposition hebdomadaire : Je reçois chaque semaine une proposition de menus via email ou notification, prenant en compte mes préférences alimentaires et celles de mon foyer.
+  - Diversité des menus : Les plats proposés doivent changer chaque semaine et ne pas se répéter 2 semaine a suivre.
+  - Gestion des préférences : Les modifications de mes préférences ou allergies dans mon profil doivent être prises en compte dans les propositions futures.
 
 ## User Story 2:
 ### En tant qu’utilisateur :
 Je veux pouvoir demander une liste de courses associée aux menus proposés afin de faciliter la préparation des repas.
 
 ### Critères d'acceptation :
-- **Génération de la liste de courses** : Je peux générer une liste de courses correspondant aux menus proposés, incluant tous les ingrédients nécessaires pour la semaine.
-- **Téléchargement** : Je peux télécharger la liste de courses 
-
+  - Génération de la liste de courses : Je peux générer une liste de courses correspondant aux menus proposés, incluant tous les ingrédients nécessaires pour la semaine.
+  - Téléchargement : Je peux télécharger la liste de courses.
 
 ## User Story 3:
 ### En tant qu’utilisateur :
 Je veux que la liste de courses inclue une estimation du coût des ingrédients, fournie par le site, afin de pouvoir planifier mon budget.
 
 ### Critères d'acceptation :
-- **Estimation du coût** : La liste de courses inclut une estimation du coût total des ingrédients.
- 
+  - Estimation du coût : La liste de courses inclut une estimation du coût total des ingrédients.
+
 ## User Story 4:
 ### En tant qu’administrateur :
 Je veux pouvoir mettre à jour les prix des ingrédients afin que les utilisateurs aient des estimations de coûts réalistes et à jour.
 
 ### Critères d'acceptation :
-- **Gestion des prix par région** : Je peux définir et mettre à jour les prix des ingrédients.
-- **Mise à jour visible pour les utilisateurs** : Les utilisateurs doivent voir l’estimation mise à jour lors de la prochaine génération de leur liste de courses après la mise à jour des prix.
-
+  - Gestion des prix par région : Je peux définir et mettre à jour les prix des ingrédients.
+  - Mise à jour visible pour les utilisateurs : Les utilisateurs doivent voir l’estimation mise à jour lors de la prochaine génération de leur liste de courses après la mise à jour des prix.
 
 ## User Story 5:
 ### En tant qu’utilisateur :
 Je veux pouvoir attribuer des notes aux menus en fonction de différents critères (goût, difficulté de réalisation, coût, temps de préparation) et consulter la moyenne des notes pour chaque critère afin d’avoir un aperçu global de la qualité du menu.
 
 ### Critères d'acceptation :
-- **Notation des menus** : Je peux attribuer une note globale aux menus ou évaluer chaque critère individuellement (goût, difficulté, coût, temps).
-- **Consultation des moyennes** : Je peux consulter la moyenne des notes attribuées par tous les utilisateurs pour chaque critère (goût, difficulté, coût, temps).
-- **Historique des notes** : Je peux consulter les notes que j'ai attribuées aux menus dans l'historique de mon compte.
-
+  - Notation des menus : Je peux attribuer une note globale aux menus ou évaluer chaque critère individuellement (goût, difficulté, coût, temps).
+  - Consultation des moyennes : Je peux consulter la moyenne des notes attribuées par tous les utilisateurs pour chaque critère (goût, difficulté, coût, temps).
+  - Historique des notes : Je peux consulter les notes que j'ai attribuées aux menus dans l'historique de mon compte.
 
 ## User Story 6:
 ### En tant qu’utilisateur :
 Je veux pouvoir laisser des commentaires détaillés sur les menus proposés afin de partager des suggestions d'amélioration, des variantes ou des retours spécifiques sur mon expérience.
 
 ### Critères d'acceptation :
-- **Commentaires sur les menus** : Je peux ajouter des commentaires pour chaque menu afin de partager des détails supplémentaires (suggestions, variantes, avis personnel).
-- **Affichage des commentaires** : Les autres utilisateurs ou moi-même peuvent voir les commentaires que j'ai laissés sous les menus notés.
-
+  - Commentaires sur les menus : Je peux ajouter des commentaires pour chaque menu afin de partager des détails supplémentaires (suggestions, variantes, avis personnel).
+  - Affichage des commentaires : Les autres utilisateurs ou moi-même peuvent voir les commentaires que j'ai laissés sous les menus notés.
 
 ## User Story 7:
 ### En tant qu’utilisateur :
 Je veux pouvoir marquer certains menus ou plats comme favoris afin de les retrouver facilement pour les refaire dans le futur.
 
 ### Critères d'acceptation :
-- **Ajout aux favoris** : Je peux ajouter n'importe quel menu ou plat en favoris depuis l'interface utilisateur.
-- **Accès aux favoris** : Je peux accéder à la liste de mes menus favoris à tout moment, et ils doivent être facilement retrouvables depuis mon profil.
-- **Suppression des favoris** : Je peux retirer un menu ou plat de mes favoris si je ne souhaite plus le conserver.
+  - Ajout aux favoris : Je peux ajouter n'importe quel menu ou plat en favoris depuis l'interface utilisateur.
+  - Accès aux favoris : Je peux accéder à la liste de mes menus favoris à tout moment, et ils doivent être facilement retrouvables depuis mon profil.
+  - Suppression des favoris : Je peux retirer un menu ou plat de mes favoris si je ne souhaite plus le conserver.
