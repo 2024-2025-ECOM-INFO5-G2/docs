@@ -20,7 +20,10 @@
 ### Backend Issues
 - **5** - API Update de caratéristiques de comptes 
 
-## US4 : Accès au compte et modification/gestion des informations lié au foyer
+## US3 : Accès au compte et modification/gestion des informations lié au foyer
 
 ### Frontend Issues
 - **3** - Page de modification de compte
+
+### Backend Issues
+- **5** - Call API pour la modification
