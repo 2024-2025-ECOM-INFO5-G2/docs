@@ -14,7 +14,6 @@
 - Ajouter des membres de son foyer
     - supprimer
 - Accéder au site / formulaire en ligne
-- Accéder à tous les menus existant
 - Modifier à postérori les préférences de l'utilisatateur
 - 
 #### Administrateur
@@ -24,6 +23,7 @@
 
 
 ### Scénario 2
+- Accéder à tous les menus existant
 - Recevoir par mail une proposition de menus hebdomadaire
     - respect des préférences
     - différent chaque semaine
