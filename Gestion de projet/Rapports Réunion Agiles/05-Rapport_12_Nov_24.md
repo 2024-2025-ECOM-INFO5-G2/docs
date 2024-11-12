@@ -1,3 +1,5 @@
+# Daily Standup - mardi 12 novembre 2024
+
 ## Informations générales
 
 - **Date et heure :** 12/11/2024 à 08:15
