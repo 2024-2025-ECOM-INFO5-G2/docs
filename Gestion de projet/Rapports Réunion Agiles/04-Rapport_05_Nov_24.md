@@ -2,7 +2,7 @@
 
 ## Informations générales
 
-- **Date et heure :** 12/11/2024 à 08:15
+- **Date et heure :** 05/11/2024 à 08:15
 - **Durée :** 15 minutes
 - **Scrum Master :** Alexandre ARLE
 - **Participants :** Tous les membres du groupe
