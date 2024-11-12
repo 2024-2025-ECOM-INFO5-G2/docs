@@ -1,4 +1,4 @@
-## Difficultés rencontrées
+# Daily Standup - mardi 15 octobre 2024
 
 ## Informations générales
 
