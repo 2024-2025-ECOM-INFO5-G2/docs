@@ -1,4 +1,4 @@
-## Difficultés rencontrées
+# Daily Standup - mardi 22 octobre 2024
 
 ## Informations générales
 
