@@ -22,10 +22,10 @@
 ## Objectifs de la séance actuelle
 
 ### Tâches prévues
-- [ ] création du modèle de données pour les menus (back-end)
+- [x] création du modèle de données pour les menus (back-end)
 - [ ] génération de la semaine de menus (back-end)
 - [ ] développement de l'interface menus pour l'utilisateur (front-end)
-- [ ] netoyage des tests (front-end) générés par jhipster + tests cypress
+- [x] netoyage des tests (front-end) générés par jhipster + tests cypress
 - [ ] monitoring de l'application
 
 ## Difficultés rencontrées
