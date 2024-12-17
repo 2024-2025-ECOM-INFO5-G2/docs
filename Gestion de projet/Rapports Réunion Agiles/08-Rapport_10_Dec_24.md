@@ -23,7 +23,7 @@
 ## Objectifs de la séance actuelle
 
 ### Tâches prévues
-- [ ] parsing des données (préférences alimentaires) 
+- [x] parsing des données (préférences alimentaires) 
 - [x] mise en place du CI/CD dans GitHub Actions
 - [x] modification des données utilisateur/foyer après connexion
 - [ ] développement de l'interface menus pour l'utilisateur (front-end)
