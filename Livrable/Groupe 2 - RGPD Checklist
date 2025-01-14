@@ -1,0 +1,65 @@
+# Checklist RGPD - Groupe 2
+
+## 1. Collecte des Données Personnelles
+- [x] Identification des données personnelles collectées
+  - Nom, prénom
+  - Adresse email
+  - Mot de passe (hashé)
+  - Numéro de téléphone
+  - Date de naissance
+  - Poids, taille, Genre
+  - Membre du foyer
+  - Objectif de perte de poids
+  - Estimation de mon niveau d'activité par jour
+  - Préférences alimentaires du foyer
+
+## 2. Base Légale du Traitement
+- [ ] Demande de Consentement explicite des utilisateurs
+- [X] Conditions générales d’utilisation et Mentions Légales (Voir page lié)
+- [ ] Conditions d'utilisation claires
+- [X] Finalités du traitement définies
+- [X] Durée de conservation précisée
+
+## 3. Droits des Utilisateurs
+- [x] Droit d'accès aux données
+- [x] Droit de rectification
+- [x] Droit à l'effacement
+- [x] Droit à la portabilité
+- [x] Droit d'opposition
+- [x] Droit de retrait du consentement
+
+## 4. Mesures Techniques
+- [x] Chiffrement des données sensibles (mot de passe)
+- [x] Sécurisation des communications (HTTPS)
+- [x] Limitation d'accès aux données (Ex: rôles)
+- [ ] Journalisation des accès
+- [ ] Sauvegarde sécurisée
+
+## 5. Documentation
+- [ ] Registre des traitements
+- [ ] Politique de confidentialité
+- [ ] Procédure en cas de violation
+- [x] Documentation technique
+
+## 6. Sous-traitants
+- [x] Azure (Hébergement)
+- [x] Services d'envoi d'emails externe (Twilio)
+- [X] GitHub (Code source)
+
+## 7. Mesures Organisationnelles
+- [ ] Désignation d'un responsable RGPD
+- [x] Formation des équipes
+- [ ] Procédures internes
+- [ ] Audits réguliers
+
+## 8. Actions Prioritaires
+1. [ ] Implémentation de la suppression automatique des données inactives
+2. [ ] Mettre en place un système d'export des données
+3. [ ] Renforcer la journalisation des accès
+4. [ ] Établir une procédure de notification en cas de fuite
+
+## 9. Points de Vigilance
+- Durée de conservation des logs
+- Sécurité des backups
+- Mise à jour régulière des consentements
+- Traçabilité des modifications
